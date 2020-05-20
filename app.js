@@ -25,6 +25,16 @@ const oidc = new ExpressOIDC({
   scope: 'openid profile'
 });
 
+// Use This below config for local
+// const oidc = new ExpressOIDC({
+//   issuer: 'https://dev-337333.oktapreview.com/oauth2/default',
+//   client_id: '0oarljwjo5OlifVJn0h7',
+//   client_secret: "FVMkSmE8DHnDEKiZZS1UU33ZXPrhrbkbGmOVc0fx",
+//   redirect_uri: 'http://localhost:4200/',
+//   appBaseUrl: 'http://localhost:4200/',
+//   scope: 'openid profile'
+// });
+
 
 app.use(session({
   resave: false,
