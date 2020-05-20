@@ -42,7 +42,7 @@ app.use(session({
   secret: 'its_a_secret_to_everybody' 
 }));
 
-app.use(oidc.router);
+// app.use(oidc.router);
 
 
 // view engine setup
@@ -58,13 +58,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/',oidc.ensureAuthenticated(), indexRouter);
+app.use('/', indexRouter);
+
 app.use('/users', usersRouter);
 
-
-
-app.get('/demo', function (req, res, next) {
-  res.render('index', { path: 'payment-app',type:'microapp', config: JSON.stringify(config) });
-});
 
 app.get('/logout',oidc.forceLogoutAndRevoke(), (req, res) => {
   req.logout();
