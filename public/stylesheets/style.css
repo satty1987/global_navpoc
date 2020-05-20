@@ -1,98 +1,144 @@
-
 a {
   color: rgb(255, 22, 142);
   font-size: 0.9rem;
   font-weight: 500;
 }
 
-h4{
-  font-size:24px;
-  margin-bottom:20px;
+* {
+  font-family: Roboto, sans-serif;
 }
-.text-capitalize
-{
+#micro-container input{
+  width: auto;
+  display: inline-block;
+  padding: 0;
+}
+.form-control-input input {
+  border: 1px solid #000;
+  width: 400px;
+  padding: 10px 15px;
+  font-family: Roboto, sans-serif;
+}
+
+.radio input[type="radio"]+label::after {
+  background-color: #428bca
+}
+
+.radio input[type="radio"]:checked+label::before {
+  border: 2px solid #e20074
+}
+
+.radio input[type="radio"]:checked+label::after {
+  background-color: #e20074
+}
+
+.radio input[type="radio"]:checked:disabled+label::before {
+  border: 2px solid #9b9b9b
+}
+
+.radio input[type="radio"]:checked:disabled+label::after {
+  background-color: #9b9b9b
+}
+
+h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.text-capitalize {
   text-transform: capitalize;
 }
-button{
+
+button {
   background-color: #e20074;
   color: #fff;
-  font-family: Tele-GroteskHal, sans-serif;
-
+  font-family: Roboto, sans-serif;
   padding: 10px 30px;
 }
-button:disabled{
+
+button:disabled {
   background-color: #ccc;
-   color: #4c4c4c;
-   font-family: Tele-GroteskHal, sans-serif;
+  color: #4c4c4c;
+  font-family: Roboto, sans-serif;
+}
 
+.form-control-input {
+  margin-bottom: 20px;
 }
-.form-control-input{
-  margin-bottom: 10px;
-}
-.form-control-input > div{
+
+.form-control-input > div {
   font-size: 14px;
-  color:#ff0000;
-
-  font-family: Tele-GroteskHal, sans-serif;
-
+  color: #ff0000;
+  font-family: Roboto, sans-serif;
 }
-
-
 
 
 /* Make Payment */
+
 .p-l-6 {
   padding-left: 6px;
 }
+
 .p-l-33 {
   padding-left: 33px;
 }
+
 .m-l-33 {
   margin-left: 33px;
 }
+
 .media {
   margin-bottom: 20px;
 }
+
 .media > img {
   margin-right: 28px;
   width: 48px;
   height: 48px;
   color: #000;
 }
+
 .media .radio {
   margin-left: 0px;
 }
+
 .media .media-body h3 {
   padding-top: 10px;
   padding-bottom: 20px;
 }
+
 @media screen and (max-width: 360px) {
   .media .media-body h3 {
-    padding-top: 6px;
- }
+      padding-top: 6px;
+  }
 }
+
 .lable-color {
   color: #6a6a6a;
-  font-family: Arial;
+  font-family: Roboto, sans-serif;
 }
+
 .btn-block {
   text-align: right;
 }
+
 .btn-block button {
   margin-left: 20px;
   float: right;
 }
+
 .Make-a-payment h2 {
   font-size: 72px;
   line-height: 0.89;
   letter-spacing: -1.5px;
   margin-bottom: 0px;
 }
+
 .Make-a-payment h2 + .title-label {
   font-size: 24px;
   margin-bottom: 40px;
   padding-top: 15px;
 }
+
 .Make-a-payment h3 {
   font-size: 32px;
   font-weight: normal;
@@ -101,17 +147,20 @@ button:disabled{
   line-height: 1;
   letter-spacing: -0.33px;
 }
+
 .Make-a-payment h1 {
-  line-height: 72px;
+  font-size: 50px;
   margin-bottom: 23px;
 }
+
 .radio input {
   width: 20px;
   height: 20px;
 }
+
 .radio label {
   height: 24px;
-  font-family: Arial;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -121,63 +170,78 @@ button:disabled{
   color: #6a6a6a;
   padding-left: 15px;
 }
+
 .collapse-link {
   margin: -7px 0 10px 0;
   padding: 0 0 0 30px;
 }
+
 .date_iocn {
   z-index: 9;
   top: 50%;
   margin-top: -12px;
 }
+
 .form-control {
   background: #fff;
   border: #fff;
 }
+
 .date_iocn.fa-calendar-o {
   font-size: 25px;
   color: #e20074;
 }
+
 .fa-calendar-alt {
   font-size: 20px;
   color: #e20074;
 }
+
 .fa-calendar-alt-disabled {
   color: #6a6a6a !important;
 }
+
 .max-width-300 {
   max-width: 300px;
 }
+
 .max-width-160 {
   max-width: 160px;
 }
+
 .question input[type="text"]:focus {
   border-bottom-color: #e20074;
 }
+
 .payment-desc {
   font-size: 19px;
   font-family: Tele-GroteskHal;
   line-height: 24px;
 }
+
 .payment-desc p {
   margin-top: 24px;
 }
+
 .font-size-20 {
   font-size: 20px;
 }
+
 .dollor-icon {
   position: absolute;
   left: 2px;
   top: 11px;
   font-size: 17px;
 }
+
 .dollor-icon + input {
   padding-left: 14px;
 }
+
 .due-alert {
   width: 67px;
   height: 20px;
-  font-family: Arial;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -186,11 +250,12 @@ button:disabled{
   letter-spacing: 0.6px;
   color: #e8200d;
 }
+
 .prev-msg {
   margin-left: 30px;
   width: 377px;
   height: 12px;
-  font-family: Arial;
+  font-family: Roboto, sans-serif;
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -199,9 +264,10 @@ button:disabled{
   letter-spacing: 0.6px;
   color: #6a6a6a;
 }
+
 .def-msg {
   height: 19px;
-  font-family: Arial;
+  font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
@@ -210,6 +276,7 @@ button:disabled{
   letter-spacing: 0.8px;
   color: #000;
 }
+
 .auto-msg {
   width: 392px;
   height: 48px;
@@ -223,14 +290,16 @@ button:disabled{
   color: #000;
   color: var(--black);
 }
+
 .entrust-class {
   padding-left: 7px;
   padding-bottom: 32px;
 }
+
 .entrust-text {
   width: 85%;
   height: 24px;
-  font-family: Arial;
+  font-family: Roboto, sans-serif;
   font-size: 10px;
   font-weight: normal;
   font-style: normal;
@@ -240,42 +309,50 @@ button:disabled{
   text-align: justify;
   color: #6a6a6a;
 }
+
 .entrust-text .entrust-textlink {
   color: #000;
   font-size: 10px;
   text-decoration: underline;
   font-weight: 800;
 }
+
 .tooltip-block {
   margin: 0 10px 0 10px;
   vertical-align: text-bottom;
   text-align: left !important;
 }
+
 .immidiateMsg {
   font-size: small;
   margin-left: 29px;
   color: #6a6a6a;
 }
+
 .mouse-disabled {
   pointer-events: none;
 }
+
 .tooltip-inner {
   text-indent: left !important;
 }
+
 .information {
   height: 17px;
   width: 17px;
   vertical-align: top;
   margin-top: 3px;
 }
+
 .tooltip .tooltip-inner {
   text-align: left !important;
 }
 
 
 /*Terms and Condition*/
+
 .By-clicking-Submit {
-  font-family: Arial;
+  font-family: Roboto, sans-serif;
   font-size: 12px;
   font-weight: normal;
   font-style: normal;
@@ -284,6 +361,7 @@ button:disabled{
   letter-spacing: 0.3px;
   color: #6a6a6a;
 }
+
 .backdrop {
   background-color: #fff;
   position: fixed;
@@ -292,11 +370,13 @@ button:disabled{
   width: 100%;
   height: 100vh;
 }
+
 .BG-modal {
   width: 100%;
   height: 100vh;
   position: fixed;
 }
+
 .Terms-and-conditions {
   width: 301px;
   height: 64px;
@@ -310,14 +390,16 @@ button:disabled{
   color: #000;
   color: var(--black);
 }
+
 .Mask {
   width: 608px;
   height: 354px;
   background-color: #fff;
   border: solid 0.5px #979797;
 }
+
 .Lorem-ipsum-dolor-si {
-  font-family: Arial;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -333,13 +415,16 @@ button:disabled{
   margin: 0 4%;
   width: 92%;
 }
+
 .modal-body {
   padding: 0px;
 }
+
 .modal-footer {
   border-top: 0;
   width: 100%;
 }
+
 .Scroll-bar {
   width: 8.1px;
   height: 113px;
@@ -347,30 +432,35 @@ button:disabled{
   background-color: var(--pinkish-grey);
   box-shadow: 0 12px 32px 0 rgba(255, 255, 255, 0.2);
 }
+
 @media (min-width: 577px) {
   .modal-dialog {
-    max-width: 672px;
-    margin: 1.75rem auto;
- }
+      max-width: 672px;
+      margin: 1.75rem auto;
+  }
   .modal-dialog {
-    width: 672px;
- }
+      width: 672px;
+  }
 }
+
 @media (max-width: 576px) {
   .modal-dialog {
-    max-width: 400px;
-    margin: 130px auto;
- }
+      max-width: 400px;
+      margin: 130px auto;
+  }
 }
+
 @media (max-width: 437px) {
   .modal-dialog {
-    max-width: 300px;
-    margin: 130px auto;
- }
+      max-width: 300px;
+      margin: 130px auto;
+  }
 }
+
 .terms-and-conditions-popup img {
   height: auto !important;
 }
+
 .Print {
   font-family: 'Tele-Grotesk-Fett', 'Arial', sans-serif;
   font-size: 16px;
@@ -385,45 +475,56 @@ button:disabled{
   margin-bottom: 16px;
   cursor: pointer;
 }
+
 .pull-right {
   float: right !important;
 }
+
 .print_icon {
   cursor: pointer;
 }
 
 
-
 /*Auto Payment*/
 
+
 /* AUTOPAY CSS */
+
 .modal-dialog {
   width: auto;
   margin: 5% auto;
 }
+
 .imageHieght {
   height: 22px;
 }
+
 .transaction-detail {
   font-size: 24px;
 }
+
 .Auto-a-payment h1 {
   line-height: 64px;
   margin-bottom: 24px;
 }
+
 .Auto-a-payment h3 {
   padding-top: 10px;
   letter-spacing: -0.3px;
 }
+
+
 /*---------------- SMALL Mobile Devices ---------------*/
+
 @media screen and (max-width: 360px) {
   .Auto-a-payment h3 {
-    padding-top: 6px;
-    font-size: 22px !important;
- }
+      padding-top: 6px;
+      font-size: 22px !important;
+  }
 }
+
 .saved-number-img {
-  font-family: Arial;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -432,17 +533,20 @@ button:disabled{
   letter-spacing: 0.5px;
   color: #000;
 }
+
 .saved-number-img img {
   width: 30px;
   vertical-align: baseline;
 }
+
 .radio input {
   width: 20px;
   height: 20px;
 }
+
 .radio label {
   height: 24px;
-  font-family: Arial;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -452,22 +556,25 @@ button:disabled{
   color: #6a6a6a;
   padding-left: 15px;
 }
+
 @media (max-width: 1432px) and (min-width: 993px) {
   .desk-button-width {
-    width: 208px !important;
- }
+      width: 208px !important;
+  }
   .desk-button-right-space {
-    margin-right: 32px !important;
- }
+      margin-right: 32px !important;
+  }
 }
+
 .entrust-class {
   padding-left: 7px;
   padding-bottom: 32px;
 }
+
 .entrust-text {
   width: 85%;
   height: 24px;
-  font-family: Arial;
+  font-family: Roboto, sans-serif;
   font-size: 10px;
   font-weight: normal;
   font-style: normal;
@@ -477,20 +584,23 @@ button:disabled{
   text-align: justify;
   color: #6a6a6a;
 }
+
 .entrust-text .entrust-textlink {
   color: #000;
   font-size: 10px;
   text-decoration: underline;
   font-weight: 800;
 }
+
 @media print {
   .modal-dialog {
-    max-width: 100%;
- }
+      max-width: 100%;
+  }
   .icons-list {
-    display: none;
- }
+      display: none;
+  }
 }
+
 .backdrop {
   background-color: #fff;
   position: fixed;
@@ -499,11 +609,13 @@ button:disabled{
   width: 100%;
   height: 100vh;
 }
+
 .BG-modal {
   width: 100%;
   height: 100vh;
   position: fixed;
 }
+
 .Terms-and-conditions {
   width: 301px;
   height: 64px;
@@ -517,14 +629,16 @@ button:disabled{
   color: #000;
   color: var(--black);
 }
+
 .Mask {
   width: 608px;
   height: 354px;
   background-color: #fff;
   border: solid 0.5px #979797;
 }
+
 .Lorem-ipsum-dolor-si {
-  font-family: Arial;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -540,13 +654,16 @@ button:disabled{
   margin: 0 4%;
   width: 92%;
 }
+
 .modal-body {
   padding: 0px;
 }
+
 .modal-footer {
   border-top: 0;
   width: 100%;
 }
+
 .Scroll-bar {
   width: 8.1px;
   height: 113px;
@@ -554,33 +671,37 @@ button:disabled{
   background-color: var(--pinkish-grey);
   box-shadow: 0 12px 32px 0 rgba(255, 255, 255, 0.2);
 }
+
 @media (min-width: 577px) {
   .modal-dialog {
-    max-width: 672px;
-    margin: 1.75rem auto;
- }
+      max-width: 672px;
+      margin: 1.75rem auto;
+  }
   .modal-dialog {
-    width: 672px;
- }
+      width: 672px;
+  }
 }
+
 @media (max-width: 576px) {
   .modal-dialog {
-    max-width: 400px;
-    margin: 130px auto;
- }
+      max-width: 400px;
+      margin: 130px auto;
+  }
 }
+
 @media (max-width: 437px) {
   .modal-dialog {
-    max-width: 300px;
-    margin: 130px auto;
- }
+      max-width: 300px;
+      margin: 130px auto;
+  }
 }
+
 .terms-and-conditions-popup img {
   height: auto !important;
 }
+
 .Print {
-  font-family: 'Tele-Grotesk-Fett', 'Arial', sans-serif;
-  font-size: 16px;
+  font-family: Roboto,sans-serif;  font-size: 16px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -592,14 +713,17 @@ button:disabled{
   margin-bottom: 16px;
   cursor: pointer;
 }
+
 .pull-right {
   float: right !important;
 }
+
 .print_icon {
   cursor: pointer;
 }
+
 .Link-Change-disable {
-  font-family: Tele-Grotesk-Fett;
+  font-family: Roboto,sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -611,8 +735,9 @@ button:disabled{
   text-decoration: none;
   margin-left: 15px;
 }
+
 .inline_link {
-  font-family: Tele-Grotesk-Fett;
+  font-family: Roboto,sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -624,29 +749,35 @@ button:disabled{
   text-decoration: none;
   margin-left: 15px;
 }
+
 .spacerBlkAP {
   width: 76px;
   display: block;
   height: 10px;
 }
+
 @media (max-width: 767px) {
   .spacerBlkAP {
-    width: 0;
- }
+      width: 0;
+  }
 }
+
 .btn-wrapperMarginAutoPay {
   margin-top: -80px;
 }
+
 @media (min-width: 768px) and (max-width: 992px) {
   .btn-wrapperMarginAutoPay {
-    margin-top: 10px;
- }
+      margin-top: 10px;
+  }
 }
+
 @media (max-width: 767px) {
   .btn-wrapperMarginAutoPay {
-    margin-top: 0px;
- }
+      margin-top: 0px;
+  }
 }
+
 .btn-wrapperMarginAutoPay a {
   font-family: Tele-GroteskFet;
   font-weight: normal;
@@ -656,26 +787,29 @@ button:disabled{
   line-height: 20px;
   font-size: 18px;
 }
+
 @media (min-width: 768px) and (max-width: 992px) {
   .btn {
-    padding: 0.7rem 1rem;
- }
+      padding: 0.7rem 1rem;
+  }
   .legal {
-    max-width: 100%;
- }
+      max-width: 100%;
+  }
 }
+
 @media (min-width: 992px) {
   .legal {
-    max-width: 470px;
- }
+      max-width: 470px;
+  }
 }
 
 .legal {
   font-size: 10px!important;
   line-height: 15px;
 }
+
 .legal {
-  font-family: Arial;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
@@ -685,10 +819,9 @@ button:disabled{
   color: #6a6a6a;
 }
 
-
 .make-payment-wrapper .black_btn,
 .make-payment-wrapper .primary_btn {
-      float: none
+  float: none
 }
 
 .black_btn {
@@ -792,6 +925,7 @@ a.black_btn:disabled {
   background: #fff;
   cursor: pointer
 }
+
 .primary_btn {
   min-width: 150px;
   min-height: 48px
@@ -821,11 +955,11 @@ a.black_btn:disabled {
   color: #6a6a6a
 }
 
-.black_btn.mrg-rt-10{
+.black_btn.mrg-rt-10 {
   margin-right: 10px;
 }
 
-.radio input{
+.radio input {
   width: 20px;
   display: inline-block;
   height: 20px;
@@ -908,6 +1042,6 @@ a.black_btn:disabled {
   content: ""
 }
 
-.iframeheight{
-  height:800px;
+.iframeheight {
+  height: 800px;
 }
