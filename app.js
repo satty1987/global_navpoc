@@ -20,7 +20,7 @@ const oidc = new ExpressOIDC({
   issuer: 'https://dev-337333.oktapreview.com/oauth2/default',
   client_id: '0oarljwjo5OlifVJn0h7',
   client_secret: "FVMkSmE8DHnDEKiZZS1UU33ZXPrhrbkbGmOVc0fx",
-  redirect_uri: 'https://ngdocker.herokuapp.com/',
+  redirect_uri: 'https://ngdocker.herokuapp.com',
   appBaseUrl: 'https://ngdocker.herokuapp.com',
   scope: 'openid profile'
 });
