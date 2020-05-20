@@ -57,16 +57,16 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/',oidc.ensureAuthenticated(), indexRouter);
+//app.use('/',oidc.ensureAuthenticated(), indexRouter);
 app.use('/', indexRouter);
 
 app.use('/users', usersRouter);
 
 
-app.get('/logout',oidc.forceLogoutAndRevoke(), (req, res) => {
-  req.logout();
-  res.redirect('/');
-});
+// app.get('/logout',oidc.forceLogoutAndRevoke(), (req, res) => {
+//   req.logout();
+//   res.redirect('/');
+// });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
