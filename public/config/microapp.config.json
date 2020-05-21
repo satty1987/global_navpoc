@@ -22,5 +22,11 @@
         "elementName": "tmo-digital-footer",
         "source": "https://d3q2ine3jgeko0.cloudfront.net/client/unav.min.js",
         "loaded": false
+    },
+    {
+        "path": "app-header",
+        "elementName": "app-header",
+        "source": "https://app-cart.herokuapp.com/build/headerelement.js",
+        "loaded": false
     }
 ]
