@@ -83,7 +83,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-var port = process.env.PORT || 4200;
-app.set('port', port);
-app.listen(4200, () => console.log(`Example app listening on port port! ${port}`))
-// module.exports = app;
+// var port = process.env.PORT || 4200;
+// app.set('port', port);
+// app.listen(4200, () => console.log(`Example app listening on port port! ${port}`))
+module.exports = app;

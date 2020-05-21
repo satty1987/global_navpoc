@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./app.js",
-    "serve":"nodemon ./app.js"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "@okta/jwt-verifier": "^1.0.0",
