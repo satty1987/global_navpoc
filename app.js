@@ -20,18 +20,18 @@ const oidc = new ExpressOIDC({
   issuer: 'https://dev-337333.oktapreview.com/oauth2/default',
   client_id: '0oarljwjo5OlifVJn0h7',
   client_secret: "FVMkSmE8DHnDEKiZZS1UU33ZXPrhrbkbGmOVc0fx",
-  redirect_uri: 'https://ngdocker.herokuapp.com/payment',
+  redirect_uri: 'https://ngdocker.herokuapp.com/',
   appBaseUrl: 'https://ngdocker.herokuapp.com',
   scope: 'openid profile'
 });
 
-// Use This below config for local
+//Use This below config for local
 // const oidc = new ExpressOIDC({
 //   issuer: 'https://dev-337333.oktapreview.com/oauth2/default',
 //   client_id: '0oarljwjo5OlifVJn0h7',
 //   client_secret: "FVMkSmE8DHnDEKiZZS1UU33ZXPrhrbkbGmOVc0fx",
 //   redirect_uri: 'http://localhost:4200/',
-//   appBaseUrl: 'http://localhost:4200/',
+//   appBaseUrl: 'http://localhost:4200',
 //   scope: 'openid profile'
 // });
 
@@ -42,7 +42,7 @@ app.use(session({
   secret: 'its_a_secret_to_everybody' 
 }));
 
-// app.use(oidc.router);
+app.use(oidc.router);
 
 
 // view engine setup
@@ -57,16 +57,16 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//app.use('/',oidc.ensureAuthenticated(), indexRouter);
-app.use('/', indexRouter);
+app.use('/',oidc.ensureAuthenticated(), indexRouter);
+//app.use('/', indexRouter);
 
 app.use('/users', usersRouter);
 
 
-// app.get('/logout',oidc.forceLogoutAndRevoke(), (req, res) => {
-//   req.logout();
-//   res.redirect('/');
-// });
+app.get('/logout',oidc.forceLogoutAndRevoke(), (req, res) => {
+  req.logout();
+  res.redirect('/');
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -83,5 +83,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-//app.listen(4200, () => console.log(`Example app listening on port port!`))
-module.exports = app;
+var port = process.env.PORT || 4200;
+app.set('port', port);
+app.listen(4200, () => console.log(`Example app listening on port port! ${port}`))
+// module.exports = app;
