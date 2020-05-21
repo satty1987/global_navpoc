@@ -18,30 +18,52 @@ a {
   padding: 10px 15px;
   font-family: Roboto, sans-serif;
 }
-
-.radio input[type="radio"]+label::after {
-  background-color: #428bca
+.dollor .fa{
+  padding-top: 12px;
+  font-size: 20px;
 }
-
-.radio input[type="radio"]:checked+label::before {
-  border: 2px solid #e20074
+input[type="radio"] + label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  margin-right: 15px;
+  font-size: 13px;
 }
-
-.radio input[type="radio"]:checked+label::after {
-  background-color: #e20074
+input[type="radio"] + label:before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 14px;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  border: 1px solid #e20074;
+  background-color: #fff;
+  border-radius: 50%;
 }
-
-.radio input[type="radio"]:checked:disabled+label::before {
-  border: 2px solid #9b9b9b
+input[type="radio"] {
+  display: none !important;
+  *display: inline;
 }
-
-.radio input[type="radio"]:checked:disabled+label::after {
-  background-color: #9b9b9b
+input[type="radio"]:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #e20074;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 27px;
   margin-bottom: 20px;
+  font-weight: 300;
+  text-transform: capitalize;
 }
 
 .text-capitalize {
@@ -151,11 +173,6 @@ button:disabled {
 .Make-a-payment h1 {
   font-size: 50px;
   margin-bottom: 23px;
-}
-
-.radio input {
-  width: 20px;
-  height: 20px;
 }
 
 .radio label {
@@ -539,23 +556,6 @@ button:disabled {
   vertical-align: baseline;
 }
 
-.radio input {
-  width: 20px;
-  height: 20px;
-}
-
-.radio label {
-  height: 24px;
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 21px;
-  letter-spacing: 0.5px;
-  color: #6a6a6a;
-  padding-left: 15px;
-}
 
 @media (max-width: 1432px) and (min-width: 993px) {
   .desk-button-width {
